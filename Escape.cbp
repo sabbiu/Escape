@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Escape" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Escape" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../../Documents/headers/SDL2-2.0.3/i686-w64-mingw32/include" />
+					<Add directory="../../Documents/headers/SDL2_image-2.0.0/i686-w64-mingw32/include" />
+					<Add directory="../../Documents/headers/SDL2_mixer-2.0.0/i686-w64-mingw32/include" />
+					<Add directory="../../Documents/headers/SDL2_ttf-2.0.12/i686-w64-mingw32/include" />
+					<Add directory="/home/sabbiu/Documents/headers/freetype-2.5.5/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lglfw3 -lGL -lm -lXrandr -lXi -lX11 -lXxf86vm -lpthread" />
+					<Add option="-lGLEW -lGLU" />
+					<Add option="-lSOIL" />
+					<Add option="-lassimp" />
+					<Add option="-lSDL2_image -lSDL2_ttf -lSDL2_mixer" />
+					<Add option="-lSDL2main -lSDL2" />
+					<Add library="/home/sabbiu/Documents/headers/freetype-2.5.5/libfreetype.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Escape" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="/home/sagar/Downloads/freetype-2.5.5/include" />
+		</Compiler>
+		<Linker>
+			<Add library="/home/sabbiu/Documents/headers/freetype-2.5.5/libfreetype.a" />
+		</Linker>
+		<Unit filename="MainCharacter.h" />
+		<Unit filename="Mesh.h" />
+		<Unit filename="Model.h" />
+		<Unit filename="Shader.h" />
+		<Unit filename="SplashScreen.h" />
+		<Unit filename="aerial.ttf" />
+		<Unit filename="block.h" />
+		<Unit filename="camera.h" />
+		<Unit filename="escape.png" />
+		<Unit filename="main.cpp" />
+		<Unit filename="shaders/model_loading.frag" />
+		<Unit filename="shaders/model_loading.vs" />
+		<Unit filename="shaders/splashScr.frag" />
+		<Unit filename="shaders/splashScr.vs" />
+		<Unit filename="shaders/text.frag" />
+		<Unit filename="shaders/text.vs" />
+		<Unit filename="shaders/tileShader.frag" />
+		<Unit filename="shaders/tileShader.vs" />
+		<Unit filename="timeburner.ttf" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
